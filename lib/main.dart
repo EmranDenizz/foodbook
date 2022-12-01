@@ -20,9 +20,7 @@ class MyApplication extends StatelessWidget {
             ),
           ),
         ),
-        body: Center(
-          child: Column(),
-        ),
+        body: YemekSayfasi(),
       ),
     );
   }
@@ -31,6 +29,28 @@ class MyApplication extends StatelessWidget {
 class YemekSayfasi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Expanded(
+        child: Column(
+          children: <Widget>[
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('images/corba_1.jpg'),
+            )),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('images/yemek_1.jpg'),
+            )),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('images/tatli_1.jpg'),
+            )),
+          ],
+        ),
+      ),
+    );
   }
 }

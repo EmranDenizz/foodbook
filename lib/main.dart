@@ -34,20 +34,46 @@ class YemekSayfasi extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Expanded(
-                child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset('images/corba_1.jpg'),
-            )),
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.black,
+                  ),
+                  onPressed: () {
+                    print('çorba tıklandı');
+                  },
+                  child: Image.asset('images/corba_1.jpg'),
+                ),
+              ),
+            ),
             Expanded(
                 child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset('images/yemek_1.jpg'),
+              padding: const EdgeInsets.all(12.0),
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.black,
+                ),
+                onPressed: () {
+                  print('yemek 1 tıklandı');
+                },
+                child: Image.asset('images/yemek_1.jpg'),
+              ),
             )),
             Expanded(
-                child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Image.asset('images/tatli_1.jpg'),
-            )),
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.black,
+                  ),
+                  onPressed: () {
+                    print('tatlı 1 tıklandı');
+                  },
+                  child: Image.asset('images/tatli_1.jpg'),
+                ),
+              ),
+            ),
           ],
         ),
       ),
